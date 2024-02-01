@@ -19,10 +19,7 @@
     "uuid": "^9.0.1"
   },
   "scripts": {
-    "start": "eslint . && react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@types/jest": "^29.5.11",
@@ -34,7 +31,6 @@
     "@types/react-transition-group": "^4.4.10",
     "@typescript-eslint/eslint-plugin": "^6.20.0",
     "@typescript-eslint/parser": "^6.20.0",
-    "eslint": "^8.56.0",
-    "react-scripts": "latest"
+    "eslint": "^8.56.0"
   }
 }

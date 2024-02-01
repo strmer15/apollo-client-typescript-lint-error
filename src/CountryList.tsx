@@ -18,14 +18,14 @@ const COUNTRIES = gql`
 `;
 
 export const CountryList: FunctionComponent = () => {
-  const [shouldRefetch, _] = useState(false);
+  const [shouldRefetch] = useState(false);
 
   const { loading, error, data, refetch } =
     useQuery<{ countries: Array<{ name: string }> }>(COUNTRIES);
 
   useEffect(() => {
     if (shouldRefetch) {
-      refetch();
+      void refetch();
     }
   }, [error, refetch]);
 
